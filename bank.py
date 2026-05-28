@@ -1,5 +1,5 @@
 import mysql.connector
-db=mysql.connector.connect(host="localhost",user="root",password="VijayVetri@2716",database="bank_management_system")
+db=mysql.connector.connect(host="localhost",user="root",password="",database="bank_management_system")
 cursor=db.cursor()
 def save_transaction(acc_no,name,action,amount,balance):
     query="INSERT INTO transactions(acc_no,name,action,amount,balance) VALUES(%s,%s,%s,%s,%s)"
